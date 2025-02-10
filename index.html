@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./src/css/console.css">
   </head>
 
-  <body>
+  <body onclick="focusInput()">
     <pre id="introText">
    _    _      _ _             _   _   
   | |  | |    | | |           | | |/
@@ -29,7 +29,7 @@
     <pre id="instructions"></pre>
     <pre id="output"></pre>
     <div id="prompt">
-        <span contenteditable="true" onfocus="this.value=''" id="command-input"></span><span id="cursor" class="blink"></span>
+        <span contenteditable="true" id="command-input"></span><span id="cursor" class="blink"></span>
     </div>
 
     <div id="interlaced"></div>
@@ -41,15 +41,19 @@
   <script about="Data" type="text/javascript" src="./src/js/data.js"></script>
   
   <script>
-    window.onload = function() {
+    // window.onload = function() {
+    //   focusInput();
+    // }
+
+    const wait = (ms = 0) => new Promise((resolve) => setTimeout(resolve, ms));
+
+    function focusInput() {
       const commandInput = document.getElementById("command-input")
       setTimeout(function () {
         commandInput.focus();
         commandInput.click();
-      }, 1000);
+      }, 1);
     }
-
-    const wait = (ms = 0) => new Promise((resolve) => setTimeout(resolve, ms));
 
     function writeText(target, content, delay = 5) {
       return new Promise((resolve) => {
@@ -151,11 +155,9 @@
       prompt.prepend(">");
       cursor.innerHTML = "_";
 
+      focusInput();
+
       const input = document.getElementById("command-input");
-      setTimeout(function () {
-        input.focus();
-        input.click();
-      }, 1500);
       const output = document.getElementById("output");
       document.addEventListener("keydown", (e) =>
         handleKeypress(e, input, output)
