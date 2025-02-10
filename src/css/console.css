@@ -8,6 +8,11 @@ body {
   margin: auto;
 }
 
+[contenteditable] {
+  outline: 0px solid transparent;
+  caret-color: transparent
+}
+
 pre {
   margin: auto;
   margin-top: 0;

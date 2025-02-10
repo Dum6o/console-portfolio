@@ -29,7 +29,7 @@
     <pre id="instructions"></pre>
     <pre id="output"></pre>
     <div id="prompt">
-        <span id="command-input"></span><span id="cursor" class="blink"></span>
+        <span contenteditable="true" id="command-input"></span><span id="cursor" class="blink"></span>
     </div>
 
     <div id="interlaced"></div>
@@ -42,6 +42,8 @@
   
   <script>
     const wait = (ms = 0) => new Promise((resolve) => setTimeout(resolve, ms));
+
+    document.getElementById("command-input").focus();
 
     function writeText(target, content, delay = 5) {
       return new Promise((resolve) => {
@@ -80,7 +82,7 @@
             input.innerHTML.length - 1
           );
         }
-        else input.insertAdjacentText("beforeend", e.key);
+        //else input.insertAdjacentText("beforeend", e.key);
       }
 
       function execute(command) {
@@ -131,7 +133,7 @@
 
     document.addEventListener("DOMContentLoaded", async () => {
       const introText = document.getElementById("introText");
-      const asciiArt = introText.innerText;
+      const introArt = introText.innerText;
       introText.innerHTML = "";
 
       const instructions = document.getElementById("instructions");
@@ -139,7 +141,7 @@
       const cursor = document.getElementById("cursor");
 
       await wait(1000);
-      await writeText(introText, asciiArt);
+      await writeText(introText, introArt);
       await wait(500);
       await writeText(
         instructions,
