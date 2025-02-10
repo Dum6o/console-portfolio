@@ -29,7 +29,7 @@
     <pre id="instructions"></pre>
     <pre id="output"></pre>
     <div id="prompt">
-        <span contenteditable="true" id="command-input"></span><span id="cursor" class="blink"></span>
+        <span contenteditable="true" autocapitalize="off" id="command-input"></span><span id="cursor" class="blink"></span>
     </div>
 
     <div id="interlaced"></div>
@@ -41,9 +41,6 @@
   <script about="Data" type="text/javascript" src="./src/js/data.js"></script>
   
   <script>
-    // window.onload = function() {
-    //   focusInput();
-    // }
 
     const wait = (ms = 0) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -85,7 +82,7 @@
           //e.stopPropagation();
           const command = input.innerText;
           input.innerHTML = "";
-          output.innerHTML += "<br><strong>" + command + "</strong><br>";
+          output.innerHTML += "<br><strong>" + command.toLowerCase() + "</strong><br>";
           writeText(output, execute(command));
         }
       }
