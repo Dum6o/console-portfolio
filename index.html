@@ -42,7 +42,9 @@
   
   <script>
     window.onload = function() {
-      document.getElementById("command-input").focus();
+      const commandInput = document.getElementById("command-input")
+      commandInput.focus();
+      commandInput.click();
     }
 
     const wait = (ms = 0) => new Promise((resolve) => setTimeout(resolve, ms));
