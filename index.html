@@ -152,6 +152,10 @@
       cursor.innerHTML = "_";
 
       const input = document.getElementById("command-input");
+      setTimeout(function () {
+        input.focus();
+        input.click();
+      }, 1500);
       const output = document.getElementById("output");
       document.addEventListener("keydown", (e) =>
         handleKeypress(e, input, output)
