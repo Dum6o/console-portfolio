@@ -43,8 +43,10 @@
   <script>
     window.onload = function() {
       const commandInput = document.getElementById("command-input")
-      commandInput.focus();
-      commandInput.click();
+      setTimeout(function () {
+        commandInput.focus();
+        commandInput.click();
+      }, 1000);
     }
 
     const wait = (ms = 0) => new Promise((resolve) => setTimeout(resolve, ms));
