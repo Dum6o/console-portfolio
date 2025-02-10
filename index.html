@@ -29,7 +29,7 @@
     <pre id="instructions"></pre>
     <pre id="output"></pre>
     <div id="prompt">
-        <span contenteditable="true" id="command-input"></span><span id="cursor" class="blink"></span>
+        <span contenteditable="true" onfocus="this.value=''" id="command-input"></span><span id="cursor" class="blink"></span>
     </div>
 
     <div id="interlaced"></div>
@@ -71,18 +71,13 @@
 
       if (noInputHasFocus) {
         if (e.key === "Enter") {
+          e.preventDefault();
+          //e.stopPropagation();
           const command = input.innerText;
           input.innerHTML = "";
-          output.innerHTML += "<br><strong>" + command + "</strong>\n<br>";
+          output.innerHTML += "<br><strong>" + command + "</strong><br>";
           writeText(output, execute(command));
         }
-        else if (e.key === "Backspace") {
-          input.innerHTML = input.innerHTML.substring(
-            0,
-            input.innerHTML.length - 1
-          );
-        }
-        //else input.insertAdjacentText("beforeend", e.key);
       }
 
       function execute(command) {
