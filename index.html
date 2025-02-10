@@ -29,7 +29,7 @@
     <pre id="instructions"></pre>
     <pre id="output"></pre>
     <div id="prompt">
-        <span contenteditable="true" autofocus id="command-input"></span><span id="cursor" class="blink"></span>
+        <span contenteditable="true" onfocus="this.value=''" id="command-input"></span><span id="cursor" class="blink"></span>
     </div>
 
     <div id="interlaced"></div>
@@ -41,6 +41,10 @@
   <script about="Data" type="text/javascript" src="./src/js/data.js"></script>
   
   <script>
+    window.onload = function() {
+      document.getElementById("command-input").focus();
+    }
+
     const wait = (ms = 0) => new Promise((resolve) => setTimeout(resolve, ms));
 
     function writeText(target, content, delay = 5) {
