@@ -9,13 +9,13 @@ const Data = {
     experience - expirience and job titles
     contacts - my contacts and links`,
 
-    about: `I am solution architect and senior software developer
-living in Vilnius, Lithuania. I am working at Telia
-Global Services.
+    about: `I am a solution architect and senior software developer
+based in Vilnius, Lithuania, currently working at
+Telia Global Services.
 
-People know me as a person who is highly attentive to
-detail, dedicated, passionate, a fast learner and
-creative.
+I am known for my meticulous attention to detail,
+dedication, passion, quick learning ability, and
+creativity.
 
 Enter what you want to know more. 
   Valid options: 
@@ -23,43 +23,40 @@ Enter what you want to know more.
     tech-skills - my tech skills
     work - me at work`,
 
-    softSkills: `Ownership - feeling responsible to complete tasks on 
-time with the best outcome.
+    softSkills: `Ownership - I take responsibility for completing
+tasks on time and ensuring the best possible outcomes.
 
-Support and coach - teammates, newcomers by sharing
-knowledge.
+Support and coach - I share my knowledge with teammates
+and newcomers, providing guidance and support.
 
-Team focus - making everything I can to make good
-atmosphere in the team. Do something that
-helps other team members to do their
-daily work.
+Team focus - I strive to create a positive atmosphere
+within the team and assist others in their daily work.
 
-Creativity - having lot of ideas and suggestions
-to improve team way of working, development flow,
-UX design and system architecture solutions/ideas.
+Creativity - I strive to create a positive atmosphere
+within the team and assist others in their daily work.
 
-Fast learning - understanding things quick.
+Fast learning - I quickly grasp new concepts and skills.
 
-Collaborative - interactions with team members, other
-teams, other managers, business analysts, architects`,
+Collaborative - I engage effectively with team members,
+other teams, managers, business analysts, and architects.`,
 
-    techSkills: `I have wide knowledge of development technologies and
-tools. I have lot of experiance working with front-end
-and back-end technologies/frameworks. In example -
-Angular, React, Spring, Kafka, REST, etc. I have good
-knoledge about SQL and NOSQL databases, such an Oracle,
-PostgreSQL, MongoDB, Firebase. I know how to setup
-system CI/CD tools, such a Jenkins, Kubernetes or
-GitHub Actions. Using wide knowledge of technologies,
-I am suggesting to use frameworks or architectural
-solutions that can increase system stability and
-performance.
+    techSkills: `I possess extensive knowledge of various development
+technologies and tools, with significant experience in
+both front-end and back-end frameworks such as Angular,
+React, Spring, Kafka, and REST. I am well-versed in SQL
+and NoSQL databases, including Oracle, PostgreSQL,
+MongoDB, and Firebase. Additionally, I am proficient
+in setting up CI/CD tools like Jenkins, Kubernetes,
+and GitHub Actions.
 
-When talking about coding standards, best practices
-and clean code principles I can say that I am
-addictive to that. I always promoting best practices
-and clean code designs that I've learned from
-Conferences and video trainings.`,
+Leveraging my broad technical expertise, I recommend
+frameworks and architectural solutions that enhance
+system stability and performance.
+
+I am passionate about coding standards, best practices,
+and clean code principles. I consistently advocate
+for these practices, drawing from insights gained
+through conferences and video training sessions.`,
 
     work: `+-----------------------------------------------------+
 | MOTIVATES ME             | DEMOTIVATES ME           |
@@ -92,8 +89,8 @@ Conferences and video trainings.`,
     github
     stackoverflow`,
 
-    experience: `I have wide development experiance which I gathered
-working in different areas such a banking, health care and 
+    experience: `I have wide development experience which I gathered
+working in different areas such as banking, healthcare, and
 telecommunications.
 
 Places where I was working:
