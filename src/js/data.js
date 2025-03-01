@@ -9,13 +9,9 @@ const Data = {
     experience - expirience and job titles
     contacts - my contacts and links`,
 
-    about: `I am a solution architect and senior software developer
-based in Vilnius, Lithuania, currently working at
-Telia Global Services.
+    about: `I am a solution architect and senior software developer based in Vilnius, Lithuania, currently working at Telia Global Services.
 
-I am known for my meticulous attention to detail,
-dedication, passion, quick learning ability, and
-creativity.
+I am known for my meticulous attention to detail, dedication, passion, quick learning ability, and creativity.
 
 Enter what you want to know more. 
   Valid options: 
@@ -23,40 +19,23 @@ Enter what you want to know more.
     tech-skills - my tech skills
     work - me at work`,
 
-    softSkills: `Ownership - I take responsibility for completing
-tasks on time and ensuring the best possible outcomes.
+    softSkills: `Ownership - I take responsibility for completing tasks on time and ensuring the best possible outcomes.
 
-Support and coach - I share my knowledge with teammates
-and newcomers, providing guidance and support.
+Support and coach - I share my knowledge with teammates and newcomers, providing guidance and support.
 
-Team focus - I strive to create a positive atmosphere
-within the team and assist others in their daily work.
+Team focus - I strive to create a positive atmosphere within the team and assist others in their daily work.
 
-Creativity - I strive to create a positive atmosphere
-within the team and assist others in their daily work.
+Creativity - I strive to create a positive atmosphere within the team and assist others in their daily work.
 
 Fast learning - I quickly grasp new concepts and skills.
 
-Collaborative - I engage effectively with team members,
-other teams, managers, business analysts, and architects.`,
+Collaborative - I engage effectively with team members, other teams, managers, business analysts, and architects.`,
 
-    techSkills: `I possess extensive knowledge of various development
-technologies and tools, with significant experience in
-both front-end and back-end frameworks such as Angular,
-React, Spring, Kafka, and REST. I am well-versed in SQL
-and NoSQL databases, including Oracle, PostgreSQL,
-MongoDB, and Firebase. Additionally, I am proficient
-in setting up CI/CD tools like Jenkins, Kubernetes,
-and GitHub Actions.
+    techSkills: `I possess extensive knowledge of various development technologies and tools, with significant experience in both front-end and back-end frameworks such as Angular, React, Spring, Kafka, and REST. I am well-versed in SQL and NoSQL databases, including Oracle, PostgreSQL, MongoDB, and Firebase. Additionally, I am proficient in setting up CI/CD tools like Jenkins, Kubernetes, and GitHub Actions.
 
-Leveraging my broad technical expertise, I recommend
-frameworks and architectural solutions that enhance
-system stability and performance.
+Leveraging my broad technical expertise, I recommend frameworks and architectural solutions that enhance system stability and performance.
 
-I am passionate about coding standards, best practices,
-and clean code principles. I consistently advocate
-for these practices, drawing from insights gained
-through conferences and video training sessions.`,
+I am passionate about coding standards, best practices, and clean code principles. I consistently advocate for these practices, drawing from insights gained through conferences and video training sessions.`,
 
     work: `+-----------------------------------------------------+
 | MOTIVATES ME             | DEMOTIVATES ME           |
@@ -89,9 +68,7 @@ through conferences and video training sessions.`,
     github
     stackoverflow`,
 
-    experience: `I have wide development experience which I gathered
-working in different areas such as banking, healthcare, and
-telecommunications.
+    experience: `I have wide development experience which I gathered working in different areas such as banking, healthcare, and telecommunications.
 
 Places where I was working:
 2024-08 - now    : Telia Global Services;

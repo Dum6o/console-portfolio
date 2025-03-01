@@ -4,7 +4,7 @@ body {
   text-shadow: 0 0 3px hsl(154 84% 70%);
   font-family: monospace;
   font-size: 16px;
-  max-width: 550px;
+  max-width: 470px;
   margin: auto;
 }
 
@@ -19,6 +19,12 @@ pre {
   margin-bottom: 0;
   display: table;
   width: 100%;
+}
+
+#output {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 #glare {
@@ -78,4 +84,22 @@ pre {
 
 .blink {
   animation: blink 0.4s linear infinite;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: .7rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem;
+  }
+
+  pre#output {
+    text-align: start;
+    width: 95%;
+    margin: 0 1rem 0 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 }
